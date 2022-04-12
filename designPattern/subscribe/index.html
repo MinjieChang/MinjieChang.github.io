@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>发布订阅模式 | 个人主页</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/img/logo.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/img/logo.png">
+    <meta name="description" content="常敏杰的博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.f014b934.css" as="style"><link rel="preload" href="/assets/js/app.73ed0f99.js" as="script"><link rel="preload" href="/assets/js/2.67e34e85.js" as="script"><link rel="preload" href="/assets/js/29.6a92b436.js" as="script"><link rel="prefetch" href="/assets/js/10.7f540330.js"><link rel="prefetch" href="/assets/js/11.02b60cbf.js"><link rel="prefetch" href="/assets/js/12.12376c9d.js"><link rel="prefetch" href="/assets/js/13.8892aae1.js"><link rel="prefetch" href="/assets/js/14.bbcc7304.js"><link rel="prefetch" href="/assets/js/15.aed58648.js"><link rel="prefetch" href="/assets/js/16.f8080887.js"><link rel="prefetch" href="/assets/js/17.b85e52dc.js"><link rel="prefetch" href="/assets/js/18.ee3504f2.js"><link rel="prefetch" href="/assets/js/19.42c4c61a.js"><link rel="prefetch" href="/assets/js/20.b76090ce.js"><link rel="prefetch" href="/assets/js/21.2eaa853b.js"><link rel="prefetch" href="/assets/js/22.3ff69789.js"><link rel="prefetch" href="/assets/js/23.fd2c35ab.js"><link rel="prefetch" href="/assets/js/24.65c5cce5.js"><link rel="prefetch" href="/assets/js/25.96813b95.js"><link rel="prefetch" href="/assets/js/26.e3322333.js"><link rel="prefetch" href="/assets/js/27.dba65289.js"><link rel="prefetch" href="/assets/js/28.4262c73c.js"><link rel="prefetch" href="/assets/js/3.d4905b5f.js"><link rel="prefetch" href="/assets/js/30.66e120d6.js"><link rel="prefetch" href="/assets/js/31.08523322.js"><link rel="prefetch" href="/assets/js/32.e28fc3d1.js"><link rel="prefetch" href="/assets/js/33.93b3a069.js"><link rel="prefetch" href="/assets/js/34.86413756.js"><link rel="prefetch" href="/assets/js/35.cea74fba.js"><link rel="prefetch" href="/assets/js/36.1f1fbb43.js"><link rel="prefetch" href="/assets/js/37.568ca527.js"><link rel="prefetch" href="/assets/js/38.36291238.js"><link rel="prefetch" href="/assets/js/39.6655a304.js"><link rel="prefetch" href="/assets/js/4.43d31d04.js"><link rel="prefetch" href="/assets/js/40.2f25a167.js"><link rel="prefetch" href="/assets/js/41.ca70beeb.js"><link rel="prefetch" href="/assets/js/42.f59133d6.js"><link rel="prefetch" href="/assets/js/43.0c28e9a9.js"><link rel="prefetch" href="/assets/js/44.aa936aaf.js"><link rel="prefetch" href="/assets/js/45.fcb5b21b.js"><link rel="prefetch" href="/assets/js/46.844ece96.js"><link rel="prefetch" href="/assets/js/47.436b41d4.js"><link rel="prefetch" href="/assets/js/48.19700ec8.js"><link rel="prefetch" href="/assets/js/49.75302b25.js"><link rel="prefetch" href="/assets/js/5.53eb6ffc.js"><link rel="prefetch" href="/assets/js/50.adb79790.js"><link rel="prefetch" href="/assets/js/51.d22dc8d7.js"><link rel="prefetch" href="/assets/js/52.816b9e71.js"><link rel="prefetch" href="/assets/js/53.8b5e1175.js"><link rel="prefetch" href="/assets/js/54.7a6d801b.js"><link rel="prefetch" href="/assets/js/6.27411842.js"><link rel="prefetch" href="/assets/js/7.72925e1b.js"><link rel="prefetch" href="/assets/js/8.29780db4.js"><link rel="prefetch" href="/assets/js/9.994f1183.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f014b934.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人主页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/recent/" class="nav-link">
+  最新文章
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li></ul></div></div><div class="nav-item"><a href="/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://www.zhihu.com/people/jay-55-9/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MinjieChang/myblog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/recent/" class="nav-link">
+  最新文章
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li></ul></div></div><div class="nav-item"><a href="/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://www.zhihu.com/people/jay-55-9/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MinjieChang/myblog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">目录</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>designPattern</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/designPattern/subscribe/" aria-current="page" class="active sidebar-link">发布订阅模式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/designPattern/subscribe/#发布订阅模式" class="sidebar-link">发布订阅模式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/designPattern/subscribe/#实际遇到的问题" class="sidebar-link">实际遇到的问题</a></li><li class="sidebar-sub-header"><a href="/designPattern/subscribe/#何为发布订阅模式" class="sidebar-link">何为发布订阅模式</a></li><li class="sidebar-sub-header"><a href="/designPattern/subscribe/#发布订阅模式的模型" class="sidebar-link">发布订阅模式的模型</a></li><li class="sidebar-sub-header"><a href="/designPattern/subscribe/#使用发布订阅解决问题" class="sidebar-link">使用发布订阅解决问题</a></li><li class="sidebar-sub-header"><a href="/designPattern/subscribe/#进一步完善该模式" class="sidebar-link">进一步完善该模式</a></li><li class="sidebar-sub-header"><a href="/designPattern/subscribe/#发布订阅模式的问题" class="sidebar-link">发布订阅模式的问题</a></li><li class="sidebar-sub-header"><a href="/designPattern/subscribe/#总结" class="sidebar-link">总结</a></li></ul></li></ul></li><li><a href="/designPattern/aop/" class="sidebar-link">AOP模式</a></li><li><a href="/designPattern/iterator/" class="sidebar-link">迭代器模式</a></li><li><a href="/designPattern/proxy/" class="sidebar-link">代理模式</a></li><li><a href="/designPattern/strategy/" class="sidebar-link">策略模式</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>react</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>css</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>node</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>helpers</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="发布订阅模式"><a href="#发布订阅模式" class="header-anchor">#</a> 发布订阅模式</h2> <h3 id="实际遇到的问题"><a href="#实际遇到的问题" class="header-anchor">#</a> 实际遇到的问题</h3> <p>当涉及到多个模块之间需要进行通信，我们通常会想到把一个模块引入到另一个模块中，然后把a模块的消息发送给b</p> <p>例如，我们的系统中有个登陆模块，有菜单模块，当用户登陆成功后，需要刷新一下菜单模块，通常我们会这么做</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    nvaiMenu<span class="token punctuation">.</span><span class="token function">refresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>假如，又来个新的购物车模块，要求在用户登陆成功后，还要再刷新用户购物车信息，此时我们需要代码如下</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    nvaiMenu<span class="token punctuation">.</span><span class="token function">refresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    shoppingCar<span class="token punctuation">.</span><span class="token function">refresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>如此，随着业务的增长，这块的代码将会陷入无尽的修改中。。。。。</p> <p>其实，我们分析导致这个问题的原因，就是将多个业务逻辑强耦合，没有分离出可变不可变部分。在这里，用户登陆系统是不可变的部分，而登陆后要做的其他的操作就是可变部分。假如我们把这些其他的业务逻辑从登陆回调中抽离出来，那么这里的代码就会变得平静很多，所谓的岁月静好莫过如此。</p> <p>那么如何将这些可变部分抽来出来，这就需要我们的发布订阅模式登场了</p> <h3 id="何为发布订阅模式"><a href="#何为发布订阅模式" class="header-anchor">#</a> 何为发布订阅模式</h3> <p>认识这个模式前，我们先看一个现实中的例子</p> <p>假如小明想买房子，他肯定不会是每隔一段时间就去售楼处去问什么时候会开盘，而是把自己的手机号先在售楼处登记，然后等售楼处给自己打电话</p> <p>等到售楼处有新盘开的时候，售楼处的销售员会翻开登记客户信息的花名册，通知每个客户就可以了</p> <p>从这个例子中，我们可以看到两个参与对象(售楼处和小明)和一个事件(打电话告知楼盘信息)</p> <p>联系发布订阅模式，售楼处扮演的是消息发布者，小明等众多购房者扮演的是订阅者。</p> <h3 id="发布订阅模式的模型"><a href="#发布订阅模式的模型" class="header-anchor">#</a> 发布订阅模式的模型</h3> <p>在js中通常使用事件模型来表示一个发布订阅模式</p> <p>我们实现一个基本的事件模型</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> shift <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>shift<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">each</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">agrs<span class="token punctuation">,</span> cb</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> index <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> index <span class="token operator">&lt;</span> agrs<span class="token punctuation">.</span>length<span class="token punctuation">;</span> index<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> fn <span class="token operator">=</span> agrs<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token function">cb</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> fn<span class="token punctuation">,</span> index<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 事件对象</span>
+<span class="token keyword">var</span> Event <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">let</span> caches <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">addEventListerner</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>caches<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      caches<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    caches<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">trigger</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> key <span class="token operator">=</span> <span class="token function">shift</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span>
+    <span class="token keyword">const</span> args <span class="token operator">=</span> <span class="token function">shift</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>caches<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> caches<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment">// 循环执行</span>
+      <span class="token function">each</span><span class="token punctuation">(</span>caches<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">fn</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">removeEventListener</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> fns <span class="token operator">=</span> caches<span class="token punctuation">[</span>key<span class="token punctuation">]</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>fn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> fns<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>fns<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">===</span> fn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          fns<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      cache<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    trigger<span class="token punctuation">,</span>
+    addEventListerner<span class="token punctuation">,</span>
+    removeEventListener
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>上面是个初版的事件模型，定义了三个方法：</p> <blockquote><p><strong>addEventListerner</strong>: 添加事件监听到缓存对象中<br> <strong>trigger</strong>：事件触发器，使用此方法触发添加的监听事件<br> <strong>removeEventListener</strong>：移除监听事件</p></blockquote> <h3 id="使用发布订阅解决问题"><a href="#使用发布订阅解决问题" class="header-anchor">#</a> 使用发布订阅解决问题</h3> <p>以上是一个通用的事件模型，后面会继续完善这个模型，现在我们看看如何用这个模型来改造我们开始时候遇到的问题</p> <blockquote><p>改造登陆模块</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 在购物车业务模块中监听登陆事件</span>
+Event<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'login'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'登陆成功了，刷新购物车'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 登陆模块中发布登陆事件</span>
+<span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    Event<span class="token punctuation">.</span><span class="token function">trigger</span><span class="token punctuation">(</span><span class="token string">'login'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><p>现在就把登陆成功事件和各个业务模块给分离开了，假如导航栏在用户登陆成功后也需要刷新，此时只需要在导航模块中添加监听登陆即可：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 在导航业务模块中监听登陆事件</span>
+Event<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'login'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'登陆成功了，需要刷新导航栏'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><blockquote><p>改造楼盘给购房者发布消息业务</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code>购房者有不同房屋面积的购买需求，所以售楼处会收集这些购房者的信息，当对应的房屋面积的价格有消息后，就推送价格信息给这些对应的购房者：
+
+<span class="token comment">// 要购买100平以上的面积的</span>
+Event<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'large100'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">price</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'100平的房屋的价格是：'</span>， price<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 要购买200平以上的面积的</span>
+Event<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'large200'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">price</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'200平的房屋的价格是：'</span>， price<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 发布楼盘价格信息</span>
+Event<span class="token punctuation">.</span><span class="token function">trigger</span><span class="token punctuation">(</span><span class="token string">'large100'</span><span class="token punctuation">,</span> <span class="token number">12000</span><span class="token punctuation">)</span>
+Event<span class="token punctuation">.</span><span class="token function">trigger</span><span class="token punctuation">(</span><span class="token string">'large200'</span><span class="token punctuation">,</span> <span class="token number">10000</span><span class="token punctuation">)</span>
+
+</code></pre></div><p>小总结，通过上面的两个例子，我们发现发布订阅模式主要解决的是一对多的问题</p> <h3 id="进一步完善该模式"><a href="#进一步完善该模式" class="header-anchor">#</a> 进一步完善该模式</h3> <p>上面的事件模型还存在两个问题</p> <h5 id="问题一"><a href="#问题一" class="header-anchor">#</a> 问题一</h5> <p>缺少命名空间，当项目规模变大后，监听的事件名称很容易发生冲突，这时候需要使用一个命名空间来区分不同的模块</p> <h5 id="问题二"><a href="#问题二" class="header-anchor">#</a> 问题二</h5> <p>上面的事件模型还存在一个问题，我们只能先监听事件，然后才能再发布事件。但是在一些常见下，我们的监听事件还并没有执行，但是事件却已经发布了，这就导致消息会像消失在宇宙中一样，再也找不回了。</p> <p>比如，在异步加载的场景下，如果购物车模块的加载速度后于用户登陆模块加载，那么在用户登陆成功后，并不会触发购物车模块的更新</p> <p>所以我们需要一种事件模型，使之支持先发布后监听的场景，此种模型支持如下的使用方式：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 先触发</span>
+Event<span class="token punctuation">.</span><span class="token function">trigger</span><span class="token punctuation">(</span><span class="token string">'signal'</span><span class="token punctuation">,</span> <span class="token string">'value'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 再监听</span>
+Event<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span>‘signal’<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>可见，我们需要给trigger事件添加一个缓存机制，当发布的事件并没有添加监听的时候，需要将该事件缓存起来，当消息被添加监听的时候，先去缓存中查找有无缓存消息，如果有缓存消息，先执行，<strong>然后再将缓存清除</strong>(z注意缓存消息只能被执行一次)，没有的话，就走正常的流程即可。</p> <p>最终的发布订阅模式如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> Event <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> global <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">,</span>
+    Event<span class="token punctuation">,</span>
+    _default <span class="token operator">=</span> <span class="token string">'default'</span><span class="token punctuation">;</span>
+
+  Event <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> _listen<span class="token punctuation">,</span>
+      _trigger<span class="token punctuation">,</span>
+      _remove<span class="token punctuation">,</span>
+      _slice <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>slice<span class="token punctuation">,</span>
+      _shift <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>shift<span class="token punctuation">,</span>
+      _unshift <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>unshift<span class="token punctuation">,</span>
+      namespaceCache <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      _create<span class="token punctuation">,</span>
+      find<span class="token punctuation">,</span>
+      <span class="token function-variable function">each</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">ary<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> ret<span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> l <span class="token operator">=</span> ary<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> l<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">var</span> n <span class="token operator">=</span> ary<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+          ret <span class="token operator">=</span> <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> i<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> ret<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token function-variable function">_listen</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> fn<span class="token punctuation">,</span> cache</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>cache<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cache<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      cache<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token function-variable function">_remove</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> cache<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>cache<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>fn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> cache<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>cache<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">===</span> fn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              cache<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          cache<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token function-variable function">_trigger</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> cache <span class="token operator">=</span> <span class="token function">_shift</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        key <span class="token operator">=</span> <span class="token function">_shift</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        args <span class="token operator">=</span> arguments<span class="token punctuation">,</span>
+        _self <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">,</span>
+        ret<span class="token punctuation">,</span>
+        stack <span class="token operator">=</span> cache<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>stack <span class="token operator">||</span> <span class="token operator">!</span>stack<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token keyword">return</span> <span class="token function">each</span><span class="token punctuation">(</span>stack<span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>_self<span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 这个方法是关键，为每个发布订阅过程创建一个事件模型，并缓存起来
+     * 一个项目中，可能会存在多个事件对象
+     */</span>
+    <span class="token function-variable function">_create</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">namespace</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> namespace <span class="token operator">=</span> namespace <span class="token operator">||</span> _default<span class="token punctuation">;</span>
+      <span class="token keyword">var</span> cache <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        offlineStack <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 离线事件</span>
+        ret <span class="token operator">=</span> <span class="token punctuation">{</span>
+          <span class="token function-variable function">listen</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> fn<span class="token punctuation">,</span> last</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 执行listen，先将事件添加到事件缓存中</span>
+            <span class="token function">_listen</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> fn<span class="token punctuation">,</span> cache<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>offlineStack <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">return</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token comment">// 判断是否有离线事件缓存，就是判断是否先执行到trigger事件</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>last <span class="token operator">===</span> <span class="token string">'last'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              offlineStack<span class="token punctuation">.</span>length <span class="token operator">&amp;&amp;</span> offlineStack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+              <span class="token function">each</span><span class="token punctuation">(</span>offlineStack<span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">this</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token comment">// 离线事件执行完后，将离线事件清除，进入正常执行流程</span>
+            offlineStack <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token function-variable function">one</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> fn<span class="token punctuation">,</span> last</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">_remove</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> cache<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> fn<span class="token punctuation">,</span> last<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token function-variable function">remove</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">_remove</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> cache<span class="token punctuation">,</span> fn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token function-variable function">trigger</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">var</span> fn<span class="token punctuation">,</span>
+              args<span class="token punctuation">,</span>
+              _self <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+            <span class="token comment">// 把事件缓存添加到arguments头部</span>
+            <span class="token function">_unshift</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">,</span> cache<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            args <span class="token operator">=</span> arguments<span class="token punctuation">;</span>
+            <span class="token function-variable function">fn</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">return</span> <span class="token function">_trigger</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>_self<span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+            <span class="token comment">/**
+             * 这里会判断，如果当前是离线状态，就将事件放入离线缓存队列中
+             * 否则就执行对应监听的缓存队列中的事件
+             */</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>offlineStack<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">return</span> offlineStack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+      <span class="token comment">/**
+       * 单例模式
+       * 如果有namespace，则返回缓存中的对象
+       * 没有namespace，就创建一个新的ret
+       * 相当于在这里会给每个namespace创建一个发布监听实例对象
+       */</span>
+      <span class="token keyword">return</span> namespace
+        <span class="token operator">?</span> namespaceCache<span class="token punctuation">[</span>namespace<span class="token punctuation">]</span>
+          <span class="token operator">?</span> namespaceCache<span class="token punctuation">[</span>namespace<span class="token punctuation">]</span>
+          <span class="token operator">:</span> <span class="token punctuation">(</span>namespaceCache<span class="token punctuation">[</span>namespace<span class="token punctuation">]</span> <span class="token operator">=</span> ret<span class="token punctuation">)</span>
+        <span class="token operator">:</span> ret<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 代理模式
+     */</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      create<span class="token operator">:</span> _create<span class="token punctuation">,</span>
+      <span class="token function-variable function">one</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> fn<span class="token punctuation">,</span> last</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> event <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        event<span class="token punctuation">.</span><span class="token function">one</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> fn<span class="token punctuation">,</span> last<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">remove</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> event <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        event<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> fn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">listen</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> fn<span class="token punctuation">,</span> last</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> event <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        event<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> fn<span class="token punctuation">,</span> last<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">trigger</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> event <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        event<span class="token punctuation">.</span><span class="token function">trigger</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> arguments<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> Event<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h3 id="发布订阅模式的问题"><a href="#发布订阅模式的问题" class="header-anchor">#</a> 发布订阅模式的问题</h3> <p>发布订阅模式在解决一对多的问题中可以起到解耦业务模块的作用，比如redux/vuex使用的即是这种模式。但是这种模式也会带来一定的成本：</p> <ul><li>创建事件模型对象会消耗一定的内存</li> <li>订阅过的消息并不一定会被触发，导致订阅的消息一直存在内存中</li> <li>模块之间的消息通信被隐藏在事件模型背后，弱化模块之间的联系，导致后来会弄不清消息来自哪个模块、消息又会流向哪些模块，增加维护难度和调试难度</li></ul> <h3 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h3> <p>发布订阅模式的有点还是非常明显的，可以帮助我们实现时间上的解耦和对象之间的解耦。在异步编程中的消息广播运用广泛。它主要是为解决一对多消息发送的问题。当然带来便利性的同时也会带来一些问题，这需要我们的综合把控。</p> <p>虽然现在发布订阅模式比较少会直接在项目中使用，更多的会被封装在一些框架背后，但是其中的一些设计思路还是值得我们学习。比如在其中就使用到了代理模式和单利模式。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">4/16/2020, 8:56:56 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/" class="prev router-link-active">
+        目录
+      </a></span> <span class="next"><a href="/designPattern/aop/">
+        AOP模式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.73ed0f99.js" defer></script><script src="/assets/js/2.67e34e85.js" defer></script><script src="/assets/js/29.6a92b436.js" defer></script>
+  </body>
+</html>

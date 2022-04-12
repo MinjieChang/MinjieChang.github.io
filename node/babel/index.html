@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>babel 解析 | 个人主页</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/img/logo.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/img/logo.png">
+    <meta name="description" content="常敏杰的博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.f014b934.css" as="style"><link rel="preload" href="/assets/js/app.73ed0f99.js" as="script"><link rel="preload" href="/assets/js/2.67e34e85.js" as="script"><link rel="preload" href="/assets/js/14.bbcc7304.js" as="script"><link rel="prefetch" href="/assets/js/10.7f540330.js"><link rel="prefetch" href="/assets/js/11.02b60cbf.js"><link rel="prefetch" href="/assets/js/12.12376c9d.js"><link rel="prefetch" href="/assets/js/13.8892aae1.js"><link rel="prefetch" href="/assets/js/15.aed58648.js"><link rel="prefetch" href="/assets/js/16.f8080887.js"><link rel="prefetch" href="/assets/js/17.b85e52dc.js"><link rel="prefetch" href="/assets/js/18.ee3504f2.js"><link rel="prefetch" href="/assets/js/19.42c4c61a.js"><link rel="prefetch" href="/assets/js/20.b76090ce.js"><link rel="prefetch" href="/assets/js/21.2eaa853b.js"><link rel="prefetch" href="/assets/js/22.3ff69789.js"><link rel="prefetch" href="/assets/js/23.fd2c35ab.js"><link rel="prefetch" href="/assets/js/24.65c5cce5.js"><link rel="prefetch" href="/assets/js/25.96813b95.js"><link rel="prefetch" href="/assets/js/26.e3322333.js"><link rel="prefetch" href="/assets/js/27.dba65289.js"><link rel="prefetch" href="/assets/js/28.4262c73c.js"><link rel="prefetch" href="/assets/js/29.6a92b436.js"><link rel="prefetch" href="/assets/js/3.d4905b5f.js"><link rel="prefetch" href="/assets/js/30.66e120d6.js"><link rel="prefetch" href="/assets/js/31.08523322.js"><link rel="prefetch" href="/assets/js/32.e28fc3d1.js"><link rel="prefetch" href="/assets/js/33.93b3a069.js"><link rel="prefetch" href="/assets/js/34.86413756.js"><link rel="prefetch" href="/assets/js/35.cea74fba.js"><link rel="prefetch" href="/assets/js/36.1f1fbb43.js"><link rel="prefetch" href="/assets/js/37.568ca527.js"><link rel="prefetch" href="/assets/js/38.36291238.js"><link rel="prefetch" href="/assets/js/39.6655a304.js"><link rel="prefetch" href="/assets/js/4.43d31d04.js"><link rel="prefetch" href="/assets/js/40.2f25a167.js"><link rel="prefetch" href="/assets/js/41.ca70beeb.js"><link rel="prefetch" href="/assets/js/42.f59133d6.js"><link rel="prefetch" href="/assets/js/43.0c28e9a9.js"><link rel="prefetch" href="/assets/js/44.aa936aaf.js"><link rel="prefetch" href="/assets/js/45.fcb5b21b.js"><link rel="prefetch" href="/assets/js/46.844ece96.js"><link rel="prefetch" href="/assets/js/47.436b41d4.js"><link rel="prefetch" href="/assets/js/48.19700ec8.js"><link rel="prefetch" href="/assets/js/49.75302b25.js"><link rel="prefetch" href="/assets/js/5.53eb6ffc.js"><link rel="prefetch" href="/assets/js/50.adb79790.js"><link rel="prefetch" href="/assets/js/51.d22dc8d7.js"><link rel="prefetch" href="/assets/js/52.816b9e71.js"><link rel="prefetch" href="/assets/js/53.8b5e1175.js"><link rel="prefetch" href="/assets/js/54.7a6d801b.js"><link rel="prefetch" href="/assets/js/6.27411842.js"><link rel="prefetch" href="/assets/js/7.72925e1b.js"><link rel="prefetch" href="/assets/js/8.29780db4.js"><link rel="prefetch" href="/assets/js/9.994f1183.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f014b934.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人主页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/recent/" class="nav-link">
+  最新文章
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li></ul></div></div><div class="nav-item"><a href="/node/" class="nav-link router-link-active">
+  node
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://www.zhihu.com/people/jay-55-9/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MinjieChang/myblog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/recent/" class="nav-link">
+  最新文章
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li></ul></div></div><div class="nav-item"><a href="/node/" class="nav-link router-link-active">
+  node
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://www.zhihu.com/people/jay-55-9/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MinjieChang/myblog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">目录</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>designPattern</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>react</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>css</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>node</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/node/koa2/" class="sidebar-link">koa2 中间件的实现分析及实现自己的中间件组合方式</a></li><li><a href="/node/module/" class="sidebar-link">import、export，require、exports模块化分析</a></li><li><a href="/node/babel/" aria-current="page" class="active sidebar-link">babel 解析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/node/babel/#_1-babel基本概念及api" class="sidebar-link">1. babel基本概念及api</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/node/babel/#_1-1-ast" class="sidebar-link">1.1 ast</a></li></ul></li><li class="sidebar-sub-header"><a href="/node/babel/#_2-babel-转换代码的步骤" class="sidebar-link">2. babel 转换代码的步骤</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/node/babel/#_2-1-parse" class="sidebar-link">2.1 parse</a></li><li class="sidebar-sub-header"><a href="/node/babel/#_2-2-traverse" class="sidebar-link">2.2 traverse</a></li><li class="sidebar-sub-header"><a href="/node/babel/#_2-3-generator" class="sidebar-link">2.3 generator</a></li><li class="sidebar-sub-header"><a href="/node/babel/#小总结" class="sidebar-link">小总结</a></li><li class="sidebar-sub-header"><a href="/node/babel/#_2-4-template" class="sidebar-link">2.4 template</a></li></ul></li><li class="sidebar-sub-header"><a href="/node/babel/#_3-编写一个简单插件" class="sidebar-link">3. 编写一个简单插件</a></li><li class="sidebar-sub-header"><a href="/node/babel/#总结" class="sidebar-link">总结</a></li></ul></li><li><a href="/node/babel-plugin-console-omit/" class="sidebar-link">babel-plugin-console-omit</a></li><li><a href="/node/babel-plugin-lodash-import/" class="sidebar-link">babel-plugin-lodash-import</a></li><li><a href="/node/webpack/" class="sidebar-link">简易webpack实现</a></li><li><a href="/node/webpack-lazy/" class="sidebar-link">webpack 异步加载</a></li><li><a href="/node/devServer-mock/" class="sidebar-link">基于 webpack-dev-server 搭建 mock 服务</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>helpers</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="babel-解析"><a href="#babel-解析" class="header-anchor">#</a> babel 解析</h1> <p>在工作我们对babel的了解可能就是在 <code>webpack</code>中配置的 <code>babel-loader</code>，而对于babel在其中做了一些什么事情，怎么做的可能不是很了解，同时对于一些概念比如 <code>ast</code>等也比较模糊，本篇文章尝试对 <code>babel</code>内部做的事情解析一下。</p> <h2 id="_1-babel基本概念及api"><a href="#_1-babel基本概念及api" class="header-anchor">#</a> 1. babel基本概念及api</h2> <p>babel是什么，按照官方说法，babel是一个javascript翻译器。他可以将 <code>ECMAScript2015+</code>版本的代码转换为向后兼容的 <code>Javascript</code>语法，以便能够运行在当前和旧版本的浏览器或其他环境中。</p> <p>简单说，babel提供了代码转换的能力，你给babel提供一些代码，babel对这些代码更改后，再返回给你新生成的代码。</p> <h3 id="_1-1-ast"><a href="#_1-1-ast" class="header-anchor">#</a> 1.1 ast</h3> <p><code>ast</code>全称抽象语法树(Abstract Syntax Tree)，看名字不好理解，实际上就是用一个树状结构的对象来描述我们写的代码，babel对于代码的转换操作就是基于对 <code>ast</code>的操作。在<a href="https://astexplorer.net/" target="_blank" rel="noopener noreferrer">astexplorer<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>这个网站上可以看到将代码转换成的ast：</p> <p>有如下函数：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">square</span><span class="token punctuation">(</span><span class="token parameter">n</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> n <span class="token operator">*</span> n<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>经转换后生成的ast结果如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Program&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">38</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FunctionDeclaration&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">38</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Identifier&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">9</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;square&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;expression&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;generator&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;async&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;params&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Identifier&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">17</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;n&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BlockStatement&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">19</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">38</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ReturnStatement&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">23</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">36</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;argument&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BinaryExpression&quot;</span><span class="token punctuation">,</span>
+              <span class="token string">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+              <span class="token string">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">35</span><span class="token punctuation">,</span>
+              <span class="token string">&quot;left&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Identifier&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">31</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;n&quot;</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token string">&quot;operator&quot;</span><span class="token operator">:</span> <span class="token string">&quot;*&quot;</span><span class="token punctuation">,</span>
+              <span class="token string">&quot;right&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Identifier&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">34</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">35</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;n&quot;</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;sourceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;module&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>经过精简后，只看它的主体结构：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Program&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FunctionDeclaration&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Identifier&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;square&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;params&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Identifier&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;n&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BlockStatement&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ReturnStatement&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;argument&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BinaryExpression&quot;</span><span class="token punctuation">,</span>
+              <span class="token string">&quot;left&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token string">&quot;operator&quot;</span><span class="token operator">:</span> <span class="token string">&quot;*&quot;</span><span class="token punctuation">,</span>
+              <span class="token string">&quot;right&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>可以发现，每个块(使用对象表示的部分)都包含一个 <code>type</code>属性，值包含这些：</p> <ul><li>Program：顶层的代码描述</li> <li>FunctionDeclaration：函数的声明描述</li> <li>Identifier：变量声明描述</li> <li>BinaryExpression：表达式声明</li> <li>ReturnStatement：<code>returen</code> 标识符描述</li></ul> <p><a href="https://babeljs.io/docs/en/babel-types" target="_blank" rel="noopener noreferrer">点击查看所有type类型声明<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>看名称，我们大概可知道这些是用来描述函数各个部分的类型。</p> <p>除了 <code>type</code>属性，会根据type属性的不同值，在各个块中还其他的属性：</p> <ul><li>FunctionDeclaration:</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+  params<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  body<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>BinaryExpression:</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  type<span class="token operator">:</span> <span class="token string">&quot;BinaryExpression&quot;</span><span class="token punctuation">,</span>
+  left<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  operator<span class="token operator">:</span> <span class="token string">&quot;*&quot;</span><span class="token punctuation">,</span>
+  right<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>所有，每个不同的块由于 <code>type</code>值的不同，会有其他不同属性来描述这个块。<strong>事实上，在babel中，每个块表示为节点(Node)，也就是一个对象，这些描述节点的对象组成的一个嵌套结构的大对象可称为 <code>ast</code></strong></p> <h2 id="_2-babel-转换代码的步骤"><a href="#_2-babel-转换代码的步骤" class="header-anchor">#</a> 2. babel 转换代码的步骤</h2> <p>babel的对代码的转换是基于对 <code>ast</code>的操作，babel的转换过程主要是三个步骤：</p> <ol><li>parse：解析，将code解析成ast的过程</li> <li>traverse：遍历，遍历ast，对节点执行修改、添加、删除等操作，同时babel插件也是作用于这个步骤</li> <li>generator：生成，将修改后新的ast再生成代码</li></ol> <p>由此可见，babel做的工作就是 <code>code =&gt; ast =&gt; code</code> 的过程，下面分别再看这三个步骤的执行过程</p> <h3 id="_2-1-parse"><a href="#_2-1-parse" class="header-anchor">#</a> 2.1 parse</h3> <p>首先是 <code>parse</code>，将代码转换成 <code>ast</code>的过程。babel7之后使用 <code>@babel/parser</code>这个库做解析，在babel7前使用 <code>babylon</code>作为解析库，7之后将 <code>babylon</code>作为了 <code>babel</code>的子库。</p> <p>还有一个区别是，babel7之前的解析阶段分为两个步骤，<strong>词法分析（Lexical Analysis）</strong> 和 <strong>语法分析（Syntactic Analysis）</strong></p> <ol><li>词法分析</li></ol> <p>词法分析阶段是把代码转换成一个个的 <strong>令牌(Tokens)流</strong>，所谓的令牌流可以理解为一个扁平的语法片段数组：</p> <div class="language-js extra-class"><pre class="language-js"><code>n <span class="token operator">*</span> n
+</code></pre></div><p>上面的代码得到的令牌流：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> type<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">&quot;n&quot;</span><span class="token punctuation">,</span> start<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> end<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> loc<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> type<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">&quot;*&quot;</span><span class="token punctuation">,</span> start<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> end<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> loc<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> type<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">&quot;n&quot;</span><span class="token punctuation">,</span> start<span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span> end<span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span> loc<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>其中的每个对象元素就是对于 <code>token</code>的描述，其中type字段也包含了其他的信息来描述该token：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  type<span class="token operator">:</span> <span class="token punctuation">{</span>
+    label<span class="token operator">:</span> <span class="token string">'name'</span><span class="token punctuation">,</span>
+    keyword<span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+    beforeExpr<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    startsExpr<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    rightAssociative<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    isLoop<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    isAssign<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    prefix<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    postfix<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    binop<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+    updateContext<span class="token operator">:</span> <span class="token keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="2"><li>语法分析</li></ol> <p>语法分析阶段是将得到的令牌流转换成ast的过程。这个阶段会使用令牌中的信息把它们转换成一个 AST 的表述结构，这样更易于后续的操作。</p> <p>以上是babel7之前的parse的过程，然后在babel7之后，将code转化成tokens的过程取消掉了：</p> <p><img src="/assets/img/1.e134e831.png" alt="alt"></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> parser <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;@babel/parser&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> code <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">function square(n) {
+  return n * n;
+}</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> ast <span class="token operator">=</span> parser<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>code<span class="token punctuation">,</span> <span class="token punctuation">{</span> sourceType<span class="token operator">:</span> <span class="token string">'module'</span><span class="token punctuation">,</span> plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'jsx'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span>ast<span class="token punctuation">,</span> <span class="token punctuation">{</span> depth<span class="token operator">:</span> <span class="token keyword">null</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>在上面代码中，给 <code>parser.parse</code>方法传递字符串格式的函数，执行后会返回一个 <code>ast</code>，这里只截取其中主要内容部分</p> <div class="language-js extra-class"><pre class="language-js"><code>Node <span class="token punctuation">{</span>
+  type<span class="token operator">:</span> <span class="token string">'File'</span><span class="token punctuation">,</span>
+  start<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  end<span class="token operator">:</span> <span class="token number">38</span><span class="token punctuation">,</span>
+  loc<span class="token operator">:</span> SourceLocation <span class="token punctuation">{</span>
+    start<span class="token operator">:</span> Position <span class="token punctuation">{</span> line<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> column<span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    end<span class="token operator">:</span> Position <span class="token punctuation">{</span> line<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> column<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  program<span class="token operator">:</span> Node <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token string">'Program'</span><span class="token punctuation">,</span>
+    start<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    end<span class="token operator">:</span> <span class="token number">38</span><span class="token punctuation">,</span>
+    loc<span class="token operator">:</span> SourceLocation <span class="token punctuation">{</span>
+      start<span class="token operator">:</span> Position <span class="token punctuation">{</span> line<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> column<span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      end<span class="token operator">:</span> Position <span class="token punctuation">{</span> line<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> column<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      filename<span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+      identifierName<span class="token operator">:</span> <span class="token keyword">undefined</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    sourceType<span class="token operator">:</span> <span class="token string">'module'</span><span class="token punctuation">,</span>
+    body<span class="token operator">:</span> <span class="token punctuation">[</span>
+      Node <span class="token punctuation">{</span>
+        type<span class="token operator">:</span> <span class="token string">'FunctionDeclaration'</span><span class="token punctuation">,</span>
+        start<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        end<span class="token operator">:</span> <span class="token number">38</span><span class="token punctuation">,</span>
+        loc<span class="token operator">:</span> SourceLocation <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        id<span class="token operator">:</span> Node <span class="token punctuation">{</span>
+          type<span class="token operator">:</span> <span class="token string">'Identifier'</span><span class="token punctuation">,</span>
+          loc<span class="token operator">:</span> SourceLocation <span class="token punctuation">{</span>
+            identifierName<span class="token operator">:</span> <span class="token string">'square'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          name<span class="token operator">:</span> <span class="token string">'square'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        generator<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        async<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        params<span class="token operator">:</span> <span class="token punctuation">[</span>
+          Node <span class="token punctuation">{</span>
+            type<span class="token operator">:</span> <span class="token string">'Identifier'</span><span class="token punctuation">,</span>
+            start<span class="token operator">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+            end<span class="token operator">:</span> <span class="token number">17</span><span class="token punctuation">,</span>
+            loc<span class="token operator">:</span> SourceLocation <span class="token punctuation">{</span>
+              start<span class="token operator">:</span> Position <span class="token punctuation">{</span> line<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> column<span class="token operator">:</span> <span class="token number">16</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              end<span class="token operator">:</span> Position <span class="token punctuation">{</span> line<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> column<span class="token operator">:</span> <span class="token number">17</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              identifierName<span class="token operator">:</span> <span class="token string">'n'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            name<span class="token operator">:</span> <span class="token string">'n'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        body<span class="token operator">:</span> Node <span class="token punctuation">{</span>
+          type<span class="token operator">:</span> <span class="token string">'BlockStatement'</span><span class="token punctuation">,</span>
+          start<span class="token operator">:</span> <span class="token number">19</span><span class="token punctuation">,</span>
+          end<span class="token operator">:</span> <span class="token number">38</span><span class="token punctuation">,</span>
+          loc<span class="token operator">:</span> SourceLocation <span class="token punctuation">{</span>
+            start<span class="token operator">:</span> Position <span class="token punctuation">{</span> line<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> column<span class="token operator">:</span> <span class="token number">19</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            end<span class="token operator">:</span> Position <span class="token punctuation">{</span> line<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> column<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          body<span class="token operator">:</span> <span class="token punctuation">[</span>
+            Node <span class="token punctuation">{</span>
+              type<span class="token operator">:</span> <span class="token string">'ReturnStatement'</span><span class="token punctuation">,</span>
+              start<span class="token operator">:</span> <span class="token number">23</span><span class="token punctuation">,</span>
+              end<span class="token operator">:</span> <span class="token number">36</span><span class="token punctuation">,</span>
+              loc<span class="token operator">:</span> SourceLocation <span class="token punctuation">{</span>
+                start<span class="token operator">:</span> Position <span class="token punctuation">{</span> line<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> column<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                end<span class="token operator">:</span> Position <span class="token punctuation">{</span> line<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> column<span class="token operator">:</span> <span class="token number">15</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              argument<span class="token operator">:</span> Node <span class="token punctuation">{</span>
+                type<span class="token operator">:</span> <span class="token string">'BinaryExpression'</span><span class="token punctuation">,</span>
+                start<span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+                end<span class="token operator">:</span> <span class="token number">35</span><span class="token punctuation">,</span>
+                loc<span class="token operator">:</span> SourceLocation <span class="token punctuation">{</span>
+                  start<span class="token operator">:</span> Position <span class="token punctuation">{</span> line<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> column<span class="token operator">:</span> <span class="token number">9</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                  end<span class="token operator">:</span> Position <span class="token punctuation">{</span> line<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> column<span class="token operator">:</span> <span class="token number">14</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                left<span class="token operator">:</span> Node <span class="token punctuation">{</span>
+                  type<span class="token operator">:</span> <span class="token string">'Identifier'</span><span class="token punctuation">,</span>
+                  start<span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+                  end<span class="token operator">:</span> <span class="token number">31</span><span class="token punctuation">,</span>
+                  loc<span class="token operator">:</span> SourceLocation <span class="token punctuation">{</span>
+                    identifierName<span class="token operator">:</span> <span class="token string">'n'</span>
+                  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                  name<span class="token operator">:</span> <span class="token string">'n'</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                operator<span class="token operator">:</span> <span class="token string">'*'</span><span class="token punctuation">,</span>
+                right<span class="token operator">:</span> Node <span class="token punctuation">{</span>
+                  type<span class="token operator">:</span> <span class="token string">'Identifier'</span><span class="token punctuation">,</span>
+                  loc<span class="token operator">:</span> SourceLocation <span class="token punctuation">{</span>
+                    identifierName<span class="token operator">:</span> <span class="token string">'n'</span>
+                  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                  name<span class="token operator">:</span> <span class="token string">'n'</span>
+                <span class="token punctuation">}</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>生成的ast的具体的字段名称这里就不再解释了，其中的字段比较多，我们只需要知道的是，这些字段都是对于一个节点的描述，有了这些描述，babel在后面的 <code>generator</code> 阶段也就知道如何把这些节点再转换成具体的代码。</p> <p><a href="https://www.babeljs.cn/docs/babel-parser" target="_blank" rel="noopener noreferrer">了解 babel-parser<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_2-2-traverse"><a href="#_2-2-traverse" class="header-anchor">#</a> 2.2 traverse</h3> <p>在 <code>parser</code> 阶段 <code>babel</code> 把代码转换成了 <code>ast</code>，下个阶段就是执行对ast的遍历操作了，包括对其中节点的添加、删除、修改等操作，这是babel编译过程中最复杂的过程，<strong>同时也是babel插件介入工作的阶段</strong>，比如像 <code>babel-plugin-react</code>、<code>babel-plugin-import</code>等都是在这个阶段工作。这里还是通过例子来看。</p> <p>首先安装 <code>@babel/traverse</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> babylon <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;@babel/parser&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> traverse <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;@babel/traverse&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> code <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">function square(n) {
+  return n * n;
+}</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> ast <span class="token operator">=</span> babylon<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>code<span class="token punctuation">,</span> <span class="token punctuation">{</span> sourceType<span class="token operator">:</span> <span class="token string">'module'</span><span class="token punctuation">,</span> plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'jsx'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//====================== 遍历 ==================</span>
+
+<span class="token keyword">const</span> visitor <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">FunctionDeclaration</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 操作节点</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">Identifier</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 操作节点</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">traverse</span><span class="token punctuation">(</span>ast<span class="token punctuation">,</span> visitor<span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span>ast<span class="token punctuation">,</span> <span class="token punctuation">{</span>depth<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="_2-2-1-visitor"><a href="#_2-2-1-visitor" class="header-anchor">#</a> 2.2.1 visitor</h4> <p>可以看到，这里给 <code>traverse</code>方法第二个参数传入的是 <code>visitor</code>对象，并且其中的两个属性名 <code>FunctionDeclaration</code> 和 <code>Identifier</code>就是上面提到的ast中的节点的 <code>type</code>属性值。</p> <p>实际上，在对ast的遍历过程中，当遍历到的节点的type类型是 <code>FunctionDeclaration</code>，就会调用 <code>visitor</code>对象中的 <code>FunctionDeclaration</code>方法。称此对象为visitor，这是参考了设计模式中的 <code>visitor</code>模式</p> <h4 id="_2-2-2-path"><a href="#_2-2-2-path" class="header-anchor">#</a> 2.2.2 path</h4> <p>注意到，visitor方法中传入了一个 <code>path</code>参数，那这个path参数又是代表什么？</p> <p>ast通常会有许多的节点，那么节点之间如何相互关联呢？我们可以使用一个可操作和访问的巨大可变对象表示节点之间的关联关系，或者也可以使用 <code>Paths</code>来简化这件事情</p> <p>path表示两个节点之间连接的对象，例如有下面一个节点及其子节点的ast描述：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  type<span class="token operator">:</span> <span class="token string">&quot;FunctionDeclaration&quot;</span><span class="token punctuation">,</span>
+  id<span class="token operator">:</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token string">&quot;Identifier&quot;</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;square&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>将子节点 <code>Identifier</code>表示为一个路径(path)的话，结果如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;parent&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FunctionDeclaration&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token operator">...</span><span class="token punctuation">.</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;node&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Identifier&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;square&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>可以看到，实际上将节点 <code>Identifier</code>部分包裹在了 <code>node</code>字段中，后续对节点的操作需要基于node字段，除了node字段之外，path中还包含其他元数据：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;parent&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;node&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;hub&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;contexts&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;shouldSkip&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;shouldStop&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;removed&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;state&quot;</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;opts&quot;</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;skipKeys&quot;</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;parentPath&quot;</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;context&quot;</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;container&quot;</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;listKey&quot;</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;inList&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;parentKey&quot;</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;key&quot;</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;scope&quot;</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;typeAnnotation&quot;</span><span class="token operator">:</span> <span class="token keyword">null</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>路径对象会包含对节点的增加、修改、移动、删除等有关的其他方法我们在后面再实践。</p> <p>某种意义上，路径是一个节点在树中的位置，以及关于该节点各种信息的响应式 <strong>Responsive</strong> 表示。当你调用一个修改树的方法后，路径信息也会被更新，babel帮你管理这一切，从而使得节点操作更简单，尽可能做到无状态。</p> <h3 id="_2-3-generator"><a href="#_2-3-generator" class="header-anchor">#</a> 2.3 generator</h3> <p>经过了 <code>parsser</code>和 <code>traverse</code>阶段，babel在下个阶段就是把修改后的ast树再转换成 <code>code</code>，这个阶段就是生成 <code>generator</code>。</p> <p>这里需要使用到 <code>@babel/generator</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> parser <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;@babel/parser&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> traverse <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;@babel/traverse&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default<span class="token punctuation">;</span>
+<span class="token keyword">const</span> generator <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;@babel/generator&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> code <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">function square(n) {
+  return n * n;
+}</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> ast <span class="token operator">=</span> parser<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>code<span class="token punctuation">,</span> <span class="token punctuation">{</span> sourceType<span class="token operator">:</span> <span class="token string">'module'</span><span class="token punctuation">,</span> plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'jsx'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> visitor <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">FunctionDeclaration</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// </span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">Identifier</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;x&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">traverse</span><span class="token punctuation">(</span>ast<span class="token punctuation">,</span> visitor<span class="token punctuation">)</span>
+
+<span class="token comment">// generator 阶段</span>
+<span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">generator</span><span class="token punctuation">(</span>ast<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  compact<span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> code<span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span>result<span class="token punctuation">,</span> <span class="token punctuation">{</span> depth<span class="token operator">:</span> <span class="token keyword">null</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 字符串转换成函数</span>
+<span class="token keyword">const</span> f <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Function</span><span class="token punctuation">(</span><span class="token string">'return '</span> <span class="token operator">+</span> result<span class="token punctuation">.</span>code<span class="token punctuation">)</span>
+</code></pre></div><p>在 <code>visitor</code>的<code>Identifier</code>函数内，把变量名称转换成了 x，最终生成的新的code结果为：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  code<span class="token operator">:</span> <span class="token string">'function square(x){return x*x;}'</span><span class="token punctuation">,</span>
+  map<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  rawMappings<span class="token operator">:</span> <span class="token keyword">undefined</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>可以发现，得到的新的代码字符串中，把函数的参数名称和变量名称都改成了 <code>x</code>，这里开始有点babel插件的样子了。</p> <h3 id="小总结"><a href="#小总结" class="header-anchor">#</a> 小总结</h3> <p>以上就是babel在进行代码编译过程中做的主要的三个步骤，简单来说就是这个过程：</p> <ol><li>code =&gt; ast</li> <li>traverse ast</li> <li>ast =&gt; code</li></ol> <p>generator的过程可以查看<a href="https://www.babeljs.cn/docs/babel-generator" target="_blank" rel="noopener noreferrer">官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_2-4-template"><a href="#_2-4-template" class="header-anchor">#</a> 2.4 template</h3> <p>babel提供了一个template的功能，相当于给我们提供了代码模版的功能，对于相似的代码块直接使用模版并注入预置好的变量生成即可，不需要每次都书写相同的代码。在计算机科学中，这种能力被称为准引用(quasiquotes)</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> generator <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;@babel/generator&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default<span class="token punctuation">;</span>
+<span class="token keyword">const</span> template <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;@babel/template&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default<span class="token punctuation">;</span>
+<span class="token keyword">const</span> t <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;babel-types&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> buildRequire <span class="token operator">=</span> <span class="token function">template</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  var IMPORT_NAME = require(SOURCE);
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> ast <span class="token operator">=</span> <span class="token function">buildRequire</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token constant">IMPORT_NAME</span><span class="token operator">:</span> t<span class="token punctuation">.</span><span class="token function">identifier</span><span class="token punctuation">(</span><span class="token string">&quot;myModule&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token constant">SOURCE</span><span class="token operator">:</span> t<span class="token punctuation">.</span><span class="token function">stringLiteral</span><span class="token punctuation">(</span><span class="token string">&quot;my-module&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">generator</span><span class="token punctuation">(</span>ast<span class="token punctuation">)</span><span class="token punctuation">.</span>code<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// var myModule = require(&quot;my-module&quot;);</span>
+</code></pre></div><h2 id="_3-编写一个简单插件"><a href="#_3-编写一个简单插件" class="header-anchor">#</a> 3. 编写一个简单插件</h2> <p>有了以上对babel知识的基本了解后，现在再写一个babel插件就是比较轻松的事情了。一个babel插件的基本结构如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">babel</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> types<span class="token operator">:</span>t<span class="token punctuation">,</span> template <span class="token punctuation">}</span> <span class="token operator">=</span> babel
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    visitor<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function">Identifier</span><span class="token punctuation">(</span><span class="token parameter">path<span class="token punctuation">,</span> state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// content</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>函数解析：</p> <ul><li>babel插件就是一个函数，接受一个babel参数</li> <li>babel参数中可以解构出 <code>types</code>、<code>template</code>两个属性，这两个属性前面已经说过了</li> <li>函数返回一个对象，其中visitor对象的函数接受两个参数path和state，state可以接收用户传给插件的参数</li></ul> <p>有如下函数字符串，现在要做两件事情，第一是修改函数名称为 <code>foo</code>，第二是修改函数体，根据不同条件返回不同的结果</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> code <span class="token operator">=</span> <span class="token string">&quot;function fn(x){ return x * x };&quot;</span>
+</code></pre></div><p>把这段代码放到<a href="https://astexplorer.net/#/Z1exs6BWMq" target="_blank" rel="noopener noreferrer">astexplorer<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>中，先得到一个完整的ast树，后续的操作很大部分要参考这棵树的结构：</p> <p><img src="/assets/img/2.303bfdf3.png" alt="alt"></p> <p><strong>3.1</strong> 首先，将函数名称修改为 <code>foo</code>， 并将函数参数 <code>x</code> 修改为 <code>n</code></p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> types<span class="token operator">:</span> t<span class="token punctuation">,</span> template <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> paramName
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    visitor<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function">Identifier</span><span class="token punctuation">(</span><span class="token parameter">path<span class="token punctuation">,</span> state<span class="token punctuation">,</span> scope</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Visiting Identifer: &quot;</span> <span class="token operator">+</span> path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 修改参数 及 变量</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>name <span class="token operator">===</span> paramName<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+          path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'n'</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 翻转 type 为Identifier 的节点name</span>
+        <span class="token comment">// path.node.name = path.node.name.split('').reverse().join('')</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">FunctionDeclaration</span><span class="token punctuation">(</span><span class="token parameter">path<span class="token punctuation">,</span> state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>id <span class="token operator">=</span> t<span class="token punctuation">.</span><span class="token function">Identifier</span><span class="token punctuation">(</span><span class="token string">'foo'</span><span class="token punctuation">)</span>
+        <span class="token comment">// 或者 path.node.id.name = 'foo'</span>
+        paramName <span class="token operator">=</span> path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>params<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>name
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>修改函数名称我们在函数声明 <code>FunctionDeclaration</code> 方法中修改，修改的方式有两种':</p> <ol><li>直接替换node节点：</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>id <span class="token operator">=</span> t<span class="token punctuation">.</span><span class="token function">Identifier</span><span class="token punctuation">(</span><span class="token string">'foo'</span><span class="token punctuation">)</span>
+</code></pre></div><p>此处 <code>t.Identifier</code> 定义一个 <code>type</code>类型为 <code>Identifier</code> 的节点</p> <ol start="2"><li>修改节点的名称</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>id<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'foo'</span>
+</code></pre></div><p>修改变量名称在变量声明 <code>Identifier</code>中操作。在遍历到 <code>FunctionDeclaration</code>时，我们保存了原始变量名称到 <code>paramName</code>中，遍历到 <code>Identifier</code>时候，判断变量名称和原始变量名一致的情况下，将变量名修改为 <code>n</code>：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>name <span class="token operator">===</span> paramName<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+  path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'n'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>3.2</strong> 然后，修改函数体。期望值是在函数体内，加入if判断返回不同的结果，这里有两种做法。</p> <p>方式一是在 <code>FunctionDeclaration</code> 中操作</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">FunctionDeclaration</span><span class="token punctuation">(</span><span class="token parameter">path<span class="token punctuation">,</span> state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>id <span class="token operator">=</span> t<span class="token punctuation">.</span><span class="token function">Identifier</span><span class="token punctuation">(</span><span class="token string">'foo'</span><span class="token punctuation">)</span>
+  paramName <span class="token operator">=</span> path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>params<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>name
+  
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> whenFalse <span class="token operator">=</span> <span class="token string">'false_statement'</span> <span class="token punctuation">}</span> <span class="token operator">=</span> state<span class="token punctuation">.</span>opts
+  <span class="token comment">// 修改函数体</span>
+  <span class="token keyword">const</span> buildRequire <span class="token operator">=</span> <span class="token function">template</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    if (n) {
+      BODY_STATEMENT
+    } else {
+      return </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>whenFalse<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+    }
+  </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// 找到 ReturnStatement</span>
+  <span class="token keyword">const</span> ReturnStatement <span class="token operator">=</span> path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>body<span class="token punctuation">.</span>body<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+
+  <span class="token keyword">const</span> body_ast <span class="token operator">=</span> <span class="token function">buildRequire</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token constant">BODY_STATEMENT</span><span class="token operator">:</span> ReturnStatement<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>body<span class="token punctuation">.</span>body<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> body_ast
+<span class="token punctuation">}</span>
+</code></pre></div><p>这种方式就是自上而下，在 <code>FunctionDeclaration</code>中找到 <code>ReturnStatement</code>，也即是找到函数体中原始的值，并赋值给 <code>BODY_STATEMENT</code>，再使用 <code>template</code>生成新的 <code>ast</code>，替换掉函数体中原始的 <code>ReturnStatement</code></p> <p>方式二是在 <code>ReturnStatement</code>声明中操作：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">ReturnStatement</span><span class="token punctuation">(</span><span class="token parameter">path<span class="token punctuation">,</span> state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> whenFalse <span class="token operator">=</span> <span class="token string">'false_statement'</span> <span class="token punctuation">}</span> <span class="token operator">=</span> state<span class="token punctuation">.</span>opts
+  <span class="token comment">// 修改函数体</span>
+  <span class="token keyword">const</span> buildRequire <span class="token operator">=</span> <span class="token function">template</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    if (n) {
+      BODY_STATEMENT
+    } else {
+      return WHEN_FALSE
+    }
+  </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// 获取当前节点</span>
+  <span class="token keyword">const</span> body <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">getSibling</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span>node
+
+  <span class="token keyword">const</span> body_ast <span class="token operator">=</span> <span class="token function">buildRequire</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token constant">BODY_STATEMENT</span><span class="token operator">:</span> body<span class="token punctuation">,</span>
+    <span class="token constant">WHEN_FALSE</span><span class="token operator">:</span> t<span class="token punctuation">.</span><span class="token function">expressionStatement</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span><span class="token function">stringLiteral</span><span class="token punctuation">(</span>whenFalse<span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// path.parentPath.node.body[0] = body_ast // 这么写是可以的</span>
+  <span class="token comment">// 这里加上判断的原因是，修改了path后再次遍历 ReturnStatement 又回创建新的if语句，无限递归执行，造成死循环</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>t<span class="token punctuation">.</span><span class="token function">isFunctionDeclaration</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span>parentPath<span class="token punctuation">.</span>parentPath<span class="token punctuation">.</span>node<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    path<span class="token punctuation">.</span><span class="token function">replaceWith</span><span class="token punctuation">(</span>body_ast<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p>这种方式是当遍历到 <code>ReturnStatement</code>，先存储表达式的节点 <code>const body = path.getSibling(0).node</code>，然后构建新的节点，最后再判断如果它的上两级父节点是 <code>FunctionDeclaration</code>，那么直接使用新节点替换到老节点。这里主要使用了几个新的 api：</p> <ul><li>path.getSibling：当一个节点处于容器中，使用此方法可以获取容器中的某个节点，此处 <code>ReturnStatement</code>的 <code>parentPath</code>是 <code>BlockStatement</code>，此容器中可以存储多个子节点。 <a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#get-sibling-paths" target="_blank" rel="noopener noreferrer">Get Sibling Paths<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>t.isFunctionDeclaration：判断某个节点的类型。<a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#check-if-a-node-is-a-certain-type" target="_blank" rel="noopener noreferrer">判断类型<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>path.replaceWith：替换掉节点本身。<a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#replacing-a-node" target="_blank" rel="noopener noreferrer">替换<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <p><strong>3.3</strong> 最后使用如下方式测试插件：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> babel <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;babel-core&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> myPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;plugin_path&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> result <span class="token operator">=</span> babel<span class="token punctuation">.</span><span class="token function">transform</span><span class="token punctuation">(</span>code<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>myPlugin<span class="token punctuation">,</span> <span class="token punctuation">{</span> whenFalse<span class="token operator">:</span> <span class="token string">'hhhhh'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>code<span class="token punctuation">,</span> <span class="token string">'result'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>最终得到的结果如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">n</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> n <span class="token operator">*</span> n<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">'hhhhhh'</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>以上对babel的工作流程做了一下梳理，通过上文的分析，我们发现它做的主要工作就是 <code>code =&gt; code</code> 的过程。并且基于对原理的认识之后，我们实践了一个简单的 <code>babel-plugin</code>。当然 <code>babel</code>对于代码的处理能力当然远不止如此，一个好的插件往往可以帮我们自动化处理很多需要手动操作的代码，比如上线代码去掉 <code>console.log</code>的 <code>babel-plugin-console</code>，同时有了 <code>babel-plugin-import</code>插件，使得开发者可以按需加载组件，也是很好的优化性能的方式。所以掌握babel可以让开发者具备了 <strong>元编程</strong>的能力，如何发挥它的威力还需要我们发挥自己的创造力了。</p> <p>Refer:</p> <p><a href="https://github.com/babel/babel/tree/master/packages/babel-parser" target="_blank" rel="noopener noreferrer">文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a><br> <a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/user-handbook.md#toc-babel-register" target="_blank" rel="noopener noreferrer">babel 用户手册<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a><br> <a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md#toc-introduction" target="_blank" rel="noopener noreferrer">babel 插件手册<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a><br> <a href="https://babeljs.io/docs/en/babel-generator.html" target="_blank" rel="noopener noreferrer">babel 文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a><br></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">5/10/2021, 6:24:00 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/node/module/" class="prev">
+        import、export，require、exports模块化分析
+      </a></span> <span class="next"><a href="/node/babel-plugin-console-omit/">
+        babel-plugin-console-omit
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.73ed0f99.js" defer></script><script src="/assets/js/2.67e34e85.js" defer></script><script src="/assets/js/14.bbcc7304.js" defer></script>
+  </body>
+</html>

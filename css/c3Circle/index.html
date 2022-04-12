@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>css3 实现圆形进度条 | 个人主页</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/img/logo.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/img/logo.png">
+    <meta name="description" content="常敏杰的博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.f014b934.css" as="style"><link rel="preload" href="/assets/js/app.73ed0f99.js" as="script"><link rel="preload" href="/assets/js/2.67e34e85.js" as="script"><link rel="preload" href="/assets/js/3.d4905b5f.js" as="script"><link rel="prefetch" href="/assets/js/10.7f540330.js"><link rel="prefetch" href="/assets/js/11.02b60cbf.js"><link rel="prefetch" href="/assets/js/12.12376c9d.js"><link rel="prefetch" href="/assets/js/13.8892aae1.js"><link rel="prefetch" href="/assets/js/14.bbcc7304.js"><link rel="prefetch" href="/assets/js/15.aed58648.js"><link rel="prefetch" href="/assets/js/16.f8080887.js"><link rel="prefetch" href="/assets/js/17.b85e52dc.js"><link rel="prefetch" href="/assets/js/18.ee3504f2.js"><link rel="prefetch" href="/assets/js/19.42c4c61a.js"><link rel="prefetch" href="/assets/js/20.b76090ce.js"><link rel="prefetch" href="/assets/js/21.2eaa853b.js"><link rel="prefetch" href="/assets/js/22.3ff69789.js"><link rel="prefetch" href="/assets/js/23.fd2c35ab.js"><link rel="prefetch" href="/assets/js/24.65c5cce5.js"><link rel="prefetch" href="/assets/js/25.96813b95.js"><link rel="prefetch" href="/assets/js/26.e3322333.js"><link rel="prefetch" href="/assets/js/27.dba65289.js"><link rel="prefetch" href="/assets/js/28.4262c73c.js"><link rel="prefetch" href="/assets/js/29.6a92b436.js"><link rel="prefetch" href="/assets/js/30.66e120d6.js"><link rel="prefetch" href="/assets/js/31.08523322.js"><link rel="prefetch" href="/assets/js/32.e28fc3d1.js"><link rel="prefetch" href="/assets/js/33.93b3a069.js"><link rel="prefetch" href="/assets/js/34.86413756.js"><link rel="prefetch" href="/assets/js/35.cea74fba.js"><link rel="prefetch" href="/assets/js/36.1f1fbb43.js"><link rel="prefetch" href="/assets/js/37.568ca527.js"><link rel="prefetch" href="/assets/js/38.36291238.js"><link rel="prefetch" href="/assets/js/39.6655a304.js"><link rel="prefetch" href="/assets/js/4.43d31d04.js"><link rel="prefetch" href="/assets/js/40.2f25a167.js"><link rel="prefetch" href="/assets/js/41.ca70beeb.js"><link rel="prefetch" href="/assets/js/42.f59133d6.js"><link rel="prefetch" href="/assets/js/43.0c28e9a9.js"><link rel="prefetch" href="/assets/js/44.aa936aaf.js"><link rel="prefetch" href="/assets/js/45.fcb5b21b.js"><link rel="prefetch" href="/assets/js/46.844ece96.js"><link rel="prefetch" href="/assets/js/47.436b41d4.js"><link rel="prefetch" href="/assets/js/48.19700ec8.js"><link rel="prefetch" href="/assets/js/49.75302b25.js"><link rel="prefetch" href="/assets/js/5.53eb6ffc.js"><link rel="prefetch" href="/assets/js/50.adb79790.js"><link rel="prefetch" href="/assets/js/51.d22dc8d7.js"><link rel="prefetch" href="/assets/js/52.816b9e71.js"><link rel="prefetch" href="/assets/js/53.8b5e1175.js"><link rel="prefetch" href="/assets/js/54.7a6d801b.js"><link rel="prefetch" href="/assets/js/6.27411842.js"><link rel="prefetch" href="/assets/js/7.72925e1b.js"><link rel="prefetch" href="/assets/js/8.29780db4.js"><link rel="prefetch" href="/assets/js/9.994f1183.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f014b934.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人主页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/recent/" class="nav-link">
+  最新文章
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link router-link-active">
+  css
+</a></li></ul></div></div><div class="nav-item"><a href="/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://www.zhihu.com/people/jay-55-9/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MinjieChang/myblog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/recent/" class="nav-link">
+  最新文章
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link router-link-active">
+  css
+</a></li></ul></div></div><div class="nav-item"><a href="/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://www.zhihu.com/people/jay-55-9/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MinjieChang/myblog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">目录</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>designPattern</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>react</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>css</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/css/csshoudini/" class="sidebar-link">css houdini</a></li><li><a href="/css/textOverflow/" class="sidebar-link">文本溢出隐藏总结</a></li><li><a href="/css/word-break/" class="sidebar-link">word-wrap 与 word-break</a></li><li><a href="/css/svgCircle/" class="sidebar-link">svg 实现圆形进度条</a></li><li><a href="/css/c3Circle/" aria-current="page" class="active sidebar-link">css3 实现圆形进度条</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>node</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>helpers</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="css3-实现圆形进度条"><a href="#css3-实现圆形进度条" class="header-anchor">#</a> css3 实现圆形进度条</h3> <p>实现圆环进度条可以有多种方式，之前使用了<a href="/css/svgCircle/">svg的方式</a>实现，这里使用css3来实现一下圆形进度条</p> <p>首先看一下最终的实现效果：</p> <p><img src="/assets/img/preview.52df38e6.gif" alt="preview"></p> <p>它的原理还比较简单，就是通过控制两个半圆的旋转角度来实现。</p> <p>首先我们来画一个带border的半圆：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">.outer</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">.right</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">width</span> <span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+    <span class="token property">height</span> <span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">.rightcircle</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 20px solid #999<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+    <span class="token property">border-top-color</span><span class="token punctuation">:</span> yellowgreen<span class="token punctuation">;</span>
+    <span class="token property">border-right-color</span><span class="token punctuation">:</span> yellowgreen<span class="token punctuation">;</span>
+    <span class="token comment">/* transform: rotate(-135deg); */</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> transform .5s<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>outer<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>rightcircle<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>其中right元素是一个宽100，高200的盒子，这个控制只显示圆的一半</p> <p>rightcircle元素是宽高各160、border为20的元素，这个元素用来做圆的形状</p> <p>设置了rightcircle元素的border-top-color和border-right-color的颜色，它的一半是有颜色，一半是灰色的，效果如下：</p> <p><img src="/assets/img/1.78e6e172.png" alt="1"></p> <p>但是发现，它的有背景的边框是显示出来的，需要给它加上旋转属性，让它隐藏起来：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>-135deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="/assets/img/2.8bf08f7b.png" alt="2"></p> <p>为什么要旋转135度？画一个图辅助理解：</p> <p><img src="/assets/img/3.06a9cf58.png" alt="3"></p> <p>好了，现在右边的圆已经设置好了，同样的，再添加左边的圆就比较容易了：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">.outer</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">.left</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">width</span> <span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+    <span class="token property">height</span> <span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">.leftcircle</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 20px solid #999<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+    <span class="token property">border-bottom-color</span><span class="token punctuation">:</span> yellowgreen<span class="token punctuation">;</span>
+    <span class="token property">border-left-color</span><span class="token punctuation">:</span> yellowgreen<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>-135deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token property">transition</span><span class="token punctuation">:</span> transform .5s<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">.right</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">width</span> <span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+    <span class="token property">height</span> <span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">.rightcircle</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 20px solid #999<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+    <span class="token property">border-top-color</span><span class="token punctuation">:</span> yellowgreen<span class="token punctuation">;</span>
+    <span class="token property">border-right-color</span><span class="token punctuation">:</span> yellowgreen<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>-135deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token property">transition</span><span class="token punctuation">:</span> transform .5s<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>outer<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>left<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>leftcircle<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>rightcircle<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>add()<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>add<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>效果图如下：</p> <p><img src="/assets/img/4.217465e4.png" alt="4"></p> <p>再通过修改这两只圆的rotate的值，来控制旋转：</p> <ul><li>当旋转的角度小于180，只需要右边的圆旋转对应的角度</li> <li>当角度在180和360之间时，右边的圆固定旋转45度，左边的圆再旋转对应的角度</li> <li>大于360度，左边的圆和右边的圆固定旋转45度</li></ul> <p>顺着这个思路，我们来实现一下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> angle <span class="token operator">=</span> <span class="token number">10</span>
+<span class="token keyword">let</span> left <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'leftcircle'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token keyword">let</span> right <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'rightcircle'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+
+<span class="token keyword">function</span> <span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>angle <span class="token operator">&lt;=</span> <span class="token number">180</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">// 右转左不转</span>
+    right<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">transform: rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token operator">-</span><span class="token number">135</span> <span class="token operator">+</span> angle<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)</span><span class="token template-punctuation string">`</span></span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>angle <span class="token operator">&lt;=</span> <span class="token number">360</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 右转且左转</span>
+    right<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">transform: rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token operator">-</span><span class="token number">135</span> <span class="token operator">+</span> <span class="token number">180</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)</span><span class="token template-punctuation string">`</span></span>
+    left<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">transform: rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token operator">-</span><span class="token number">135</span> <span class="token operator">+</span> angle <span class="token operator">-</span> <span class="token number">180</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)</span><span class="token template-punctuation string">`</span></span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    right<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">transform: rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token operator">-</span><span class="token number">135</span> <span class="token operator">+</span> <span class="token number">180</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)</span><span class="token template-punctuation string">`</span></span>
+    left<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">transform: rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token operator">-</span><span class="token number">135</span> <span class="token operator">+</span> <span class="token number">180</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)</span><span class="token template-punctuation string">`</span></span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 点击按钮，调用这个方法</span>
+<span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  angle <span class="token operator">+=</span> <span class="token number">22</span>
+  <span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>点击后的效果如下：</p> <p><img src="/assets/img/preview2.0a2ed1a9.gif" alt="preview2"></p> <h4 id="版本二"><a href="#版本二" class="header-anchor">#</a> 版本二</h4> <p>功能基本能实现，但是还有个问题，在两个圆的衔接处存在一个断层的问题，为什么呢？</p> <p>由于当把rotate的只值改变后，需要有500毫秒的动画时间，如果在这500毫秒内，再次触发了start方法，此时左边的圆开始做动画了。出现的现象就是，右边的圆动画还未做完，左边的圆就开始了动画过程。</p> <p>解决方案是：</p> <ul><li>判断当前的旋转角度，当角度大于180的那个瞬间，只让右边的半圆旋转45度，刚好全出现，左边的先不动</li> <li>当右边的旋转完毕后，再旋转左边的半圆</li></ul> <p>此时，修改start如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">let</span> gap <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>angle <span class="token operator">&gt;</span> <span class="token number">180</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 这里的gap就是每次累加的值</span>
+    gap <span class="token operator">=</span> angle <span class="token operator">-</span> lastAngle
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>angle <span class="token operator">&lt;=</span> <span class="token number">180</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">// 右转左不转</span>
+    right<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">transform: rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token operator">-</span><span class="token number">135</span> <span class="token operator">+</span> angle<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)</span><span class="token template-punctuation string">`</span></span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>angle <span class="token operator">&lt;=</span> <span class="token number">180</span> <span class="token operator">+</span> gap<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 这里只会执行一次，设定的条件是 当前角度小于 180 + gap</span>
+    right<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">transform: rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token operator">-</span><span class="token number">135</span> <span class="token operator">+</span> <span class="token number">180</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)</span><span class="token template-punctuation string">`</span></span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>angle <span class="token operator">&lt;=</span> <span class="token number">360</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 右转且左转</span>
+    right<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">transform: rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token operator">-</span><span class="token number">135</span> <span class="token operator">+</span> <span class="token number">180</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)</span><span class="token template-punctuation string">`</span></span>
+    left<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">transform: rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token operator">-</span><span class="token number">135</span> <span class="token operator">+</span> angle <span class="token operator">-</span> <span class="token number">180</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)</span><span class="token template-punctuation string">`</span></span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    right<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">transform: rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token operator">-</span><span class="token number">135</span> <span class="token operator">+</span> <span class="token number">180</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)</span><span class="token template-punctuation string">`</span></span>
+    left<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">transform: rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token operator">-</span><span class="token number">135</span> <span class="token operator">+</span> <span class="token number">180</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)</span><span class="token template-punctuation string">`</span></span>
+  <span class="token punctuation">}</span>
+  lastAngle <span class="token operator">=</span> angle
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="版本三"><a href="#版本三" class="header-anchor">#</a> 版本三</h4> <p>测试发现，当我们快速点击的时候，还是会出现一点点的断层现象。所以我们需要控制start函数的触发频率，引入一个节流函数来控制start函数的控制频率，它的触发频率需要在当前的动画做完之后。</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">function</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay <span class="token operator">=</span> <span class="token number">1000</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> timer <span class="token operator">=</span> <span class="token keyword">null</span>
+    <span class="token keyword">let</span> lastTime <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> nowTime <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token comment">// 触发间隔是否小于 200 </span>
+      <span class="token keyword">let</span> sp <span class="token operator">=</span> nowTime <span class="token operator">-</span> lastTime <span class="token operator">&lt;</span> delay
+      <span class="token keyword">if</span><span class="token punctuation">(</span> sp <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span>
+      <span class="token punctuation">}</span>
+      lastTime <span class="token operator">=</span> nowTime
+      <span class="token comment">// 这样可以保证在最后一次被触发</span>
+      timer <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'timer'</span><span class="token punctuation">)</span>
+        <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span>
+        timer <span class="token operator">=</span> <span class="token keyword">null</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">var</span> newStart <span class="token operator">=</span> <span class="token function">throttle</span><span class="token punctuation">(</span>start<span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">)</span>
+
+  <span class="token comment">// 用这个方法来测试一下</span>
+  <span class="token keyword">function</span> <span class="token function">walk</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      angle <span class="token operator">=</span> <span class="token number">100</span>
+      <span class="token function">newStart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      angle <span class="token operator">=</span> <span class="token number">200</span>
+      <span class="token function">newStart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      angle <span class="token operator">=</span> <span class="token number">300</span>
+      <span class="token function">newStart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      angle <span class="token operator">=</span> <span class="token number">400</span>
+      <span class="token function">newStart</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">4000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">walk</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>看一下最后的效果：</p> <p><img src="/assets/img/preview3.5badc488.gif" alt="preview3"></p> <p>完整代码<a href="https://github.com/MinjieChang/circle-process/blob/master/src/c3Circle.html" target="_blank" rel="noopener noreferrer">查看这里<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h3> <p>通过上面的实践，我们可以解决了衔接处的断层问题，但是也出现了一个明显的视觉上的问题，就是不论每次增加多少的角度，都会在180度的时候有个停顿。如果有了更好的方案再看如何来解决这个问题。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">9/15/2020, 8:24:06 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/css/svgCircle/" class="prev">
+        svg 实现圆形进度条
+      </a></span> <span class="next"><a href="/node/koa2/">
+        koa2 中间件的实现分析及实现自己的中间件组合方式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.73ed0f99.js" defer></script><script src="/assets/js/2.67e34e85.js" defer></script><script src="/assets/js/3.d4905b5f.js" defer></script>
+  </body>
+</html>
